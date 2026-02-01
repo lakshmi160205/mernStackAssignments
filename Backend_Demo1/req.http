@@ -1,0 +1,61 @@
+GET http://localhost:3000/user-api/users
+
+
+###
+
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+  "id":101,
+  "name":"vijaya",
+  "age":20
+} 
+
+###
+PUT http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+  "id":102,
+  "name":"vijaya Lakshmi",
+  "age":24
+}
+
+###
+GET http://localhost:3000/user-api/users/102
+
+###
+DELETE http://localhost:3000/user-api/users/102
+
+###
+GET http://localhost:3000/product-api/products
+###
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+  "id":201,
+  "name":"laptop",
+  "price":75000,
+  "brand":"dell"
+}
+###
+PUT http://localhost:3000/product-api/products  
+Content-Type: application/json
+
+{
+  "id":201,
+  "name":"gaming laptop",
+  "price":85000,
+  "brand":"dell"
+}
+###
+GET http://localhost:3000/product-api/products-id/201
+
+###
+GET http://localhost:3000/product-api/products-brand/dell
+###
+DELETE http://localhost:3000/product-api/products/201
+
+

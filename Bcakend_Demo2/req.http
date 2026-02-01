@@ -1,0 +1,56 @@
+###Read all users
+GET http://localhost:4000/user-api/users
+
+
+###Read user by ID
+GET http://localhost:4000/user-api/users/697dba59e704fcc408a677bb
+
+###Create new user
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"bhanu",
+    "password":"bhanu",
+    "age":21
+}
+
+### Update user
+PUT http://localhost:4000/user-api/users/697dba59e704fcc408a677bb
+Content-Type: application/json
+
+{
+    "username":"bhanu_updated",
+    "password":"bhanu_updated",
+    "age":22
+}
+
+### Delete user
+DELETE http://localhost:4000/user-api/users/697dba59e704fcc408a677bb
+
+
+###Create new product
+POST http://localhost:4000/products-api/products
+Content-Type: application/json
+
+{
+    "pid":103,
+    "productName":"product3",
+    "price":200
+}
+
+###GET all products
+GET http://localhost:4000/products-api/products
+
+###GET product by ID
+GET http://localhost:4000/products-api/products/697dd244a426a446bc98b357
+
+###Update product by ID
+PUT http://localhost:4000/products-api/products/697dd244a426a446bc98b357
+Content-Type: application/json
+
+{
+    "pid":101,
+    "productName":"product1_updated",
+    "price":150
+}
